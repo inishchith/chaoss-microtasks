@@ -1,0 +1,10 @@
+# locals
+.venv/
+config.py
+.ipynb_checkpoints/
+
+# others
+*.pyc
+*.swo
+*.swp
+**/__pycache__/**
