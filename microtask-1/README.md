@@ -1,4 +1,4 @@
-### Microtask #1
+## Microtask #1
 
 In this microtask, we'll try to set up Perceval to be executed from PyCharm IDE.
 
