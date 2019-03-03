@@ -8,3 +8,4 @@ config.py
 *.swo
 *.swp
 **/__pycache__/**
+**/executables/**
