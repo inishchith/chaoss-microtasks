@@ -8,4 +8,5 @@ config.py
 *.swo
 *.swp
 **/__pycache__/**
-**/executables/**
+executables
+MeetInTheMiddle
