@@ -15,11 +15,14 @@ In this microtask, we'll try to set up Perceval to be executed from PyCharm IDE.
 1. Select script as `bin/perceval`
 2. Pass Perceval parameters in `Parameters` input tab.
 3. Apply & Run the script
+
 **Note:** In this case, i've used Perceval's `Git` backend .
 
 <div align="center">
     <img src="./perceval_setup.gif">
 </div>
+
+<br>
 
 - Refer PyCharm [basics](https://www.jetbrains.com/help/pycharm/essentials.html)
 - Refer to other commands by passing `--help` in configuration parameter

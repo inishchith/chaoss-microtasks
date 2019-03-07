@@ -139,5 +139,5 @@ Note: `-v` flag is used for verbose output.
 
 <hr>
 <div align="center">
-    This concludes microtask #3 ;)
+    <b> This concludes microtask #3 ;) </b>
 </div>
