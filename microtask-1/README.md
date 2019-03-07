@@ -18,13 +18,13 @@ In this microtask, we'll try to set up Perceval to be executed from PyCharm IDE.
 **Note:** In this case, i've used Perceval's `Git` backend .
 
 <div align="center">
-    <img src="./images/perceval_setup.gif">
+    <img src="./perceval_setup.gif">
 </div>
 
-- Refer [basics](https://www.jetbrains.com/help/pycharm/essentials.html)
+- Refer PyCharm [basics](https://www.jetbrains.com/help/pycharm/essentials.html)
 - Refer to other commands by passing `--help` in configuration parameter
 
 <hr>
 <div align="center">
-    This concludes microtask #1
+    <b> This concludes microtask #1 </b>
 </div>

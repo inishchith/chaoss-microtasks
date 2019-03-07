@@ -18,13 +18,13 @@ In this microtask, we'll try to set up Graal to be executed from PyCharm IDE.
 **Note:** In this case, i've used Graal's `CoCom` backend .
 
 <div align="center">
-    <img src="./images/graal_setup.gif">
+    <img src="./graal_setup.gif">
 </div>
 
-- Refer [basics](https://www.jetbrains.com/help/pycharm/essentials.html)
+- Refer PyCharm [basics](https://www.jetbrains.com/help/pycharm/essentials.html)
 - Refer to other commands by passing `--help` in configuration parameter
 
 <hr>
 <div align="center">
-    This concludes microtask #5
+    <b> This concludes microtask #5 </b>
 </div>

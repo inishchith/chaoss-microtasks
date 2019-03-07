@@ -54,5 +54,5 @@
 
 <hr>
 <div align="center">
-    This concludes microtask #7
+    <b> This concludes microtask #7 </b>
 </div>
