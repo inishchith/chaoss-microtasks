@@ -2,16 +2,54 @@
 
 - In this microtask, we'll create a Python script to execute Graal via its Python interface using the CoCom and CoLic backends.
 
+<hr>
 
-### CoCom Backend
+#### CoCom Backend
 
-- To ADD
+- CoCom ( Code Complexity ) Backend based on supported languages with the help of [Lizard](https://github.com/terryyin/lizard) helps us with various source code analysis such as:
+  - Lines of Code and Average Lines of Code
+  - Code Complexity and Average Code Complexity
+  - Number of functions
+    ... and many more
 
-### CoLic Backend
+#### CoLic Backend
 
-- To ADD
+- CoLic ( Code License ) Backend gathers license information from git repositories with the help of
+  - [NOMOS](https://github.com/fossology/fossology/tree/master/src/nomos)
+  - [SCANCODE](https://github.com/nexB/scancode-toolkit)
+- They can be activated by passing the corresponding category: `code_license_nomos` or `code_license_scancode`
 
-#### Steps for setting up NOMOS & SCANCODE executables
+<br>
 
-- install graal
-- install [cloc](https://github.com/AlDanial/cloc)
+**NOTE** : We need to pass executable path of NOMOS & SCANCODE as a parameter in order to work with CoLic backend.
+
+<hr>
+
+**Steps for setting up CoLic backend for NOMOS & SCANCODE executables**
+
+**NOMOS**
+
+```sh
+    # clone the repository
+    git clone https://github.com/fossology/fossology
+
+    # setup NOMOS
+    cd fossology/src/nomos/agent/
+    make -f Makefile.sa
+```
+
+**SCANCODE**
+
+```sh
+    # download the scancode distribution v3.0.0
+    wget https://github.com/nexB/scancode-toolkit/releases/download/v3.0.0/scancode-toolkit-3.0.0.zip
+
+    # unzip the distribution and change directory
+    unzip -q scancode-toolkit-3.0.0.zip
+    cd scancode-toolkit-3.0.0
+
+    # setup scancode for the first execution
+    ./scancode --help
+```
+
+**Note:** In order to reproduce the results please change the executable path in the source files.
