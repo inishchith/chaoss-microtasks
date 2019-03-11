@@ -4,22 +4,22 @@ In this microtask, we'll try to set up Graal to be executed from PyCharm IDE.
 
 <hr>
 
-#### Steps
+#### # Steps
 
 - Firstly download and install [PyCharm IDE](https://www.jetbrains.com/pycharm/)
-- Clone [Graal](https://github.com/chaoss/grimoirelab-graal) repository 
-- Open the graal project in PyCharm IDE
+- Clone [Graal](https://github.com/chaoss/grimoirelab-graal) repository for development purpose.
+- Open the Graal project in PyCharm IDE
 
-#### Run/Debug Configuration
+#### # Run/Debug Configuration
 
-1. Select script as `bin/graal`
-2. Pass Graal parameters in `Parameters` input tab.
-3. Apply & Run the script
+1. Select `Script path` as `bin/graal` from the project repository.
+2. Add Graal parameters in `Parameters` input tab.
+3. Apply the changes & Run the script
 
-**Note:** In this case, i've used Graal's `CoCom` backend .
+**Note:** Below: I'm setting up Graal's `CoCom` backend for execution.
 
 <div align="center">
-    <img src="./graal_setup.gif">
+    <img src="./images/graal_setup.gif">
 </div>
 
 <br>

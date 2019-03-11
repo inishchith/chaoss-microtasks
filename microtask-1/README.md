@@ -4,22 +4,22 @@ In this microtask, we'll try to set up Perceval to be executed from PyCharm IDE.
 
 <hr>
 
-#### Steps
+#### # Steps
 
 - Firstly download and install [PyCharm IDE](https://www.jetbrains.com/pycharm/)
-- Clone [Perceval](https://github.com/chaoss/grimoirelab-perceval) repository 
-- Open the graal project in PyCharm IDE
+- Clone [Perceval](https://github.com/chaoss/grimoirelab-perceval) repository for development purpose.
+- Open the Perceval project in PyCharm IDE
 
-#### Run/Debug Configuration
+#### # Run/Debug Configuration
 
-1. Select script as `bin/perceval`
-2. Pass Perceval parameters in `Parameters` input tab.
-3. Apply & Run the script
+1. Select `Script path` as `bin/perceval` from the project repository.
+2. Add Perceval parameters in `Parameters` input tab.
+3. Apply the changes & Run the script
 
-**Note:** In this case, i've used Perceval's `Git` backend .
+**Note:** Below: I'm setting up Perceval's `Git` backend for execution.
 
 <div align="center">
-    <img src="./perceval_setup.gif">
+    <img src="./images/perceval_setup.gif">
 </div>
 
 <br>
