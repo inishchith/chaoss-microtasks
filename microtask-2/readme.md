@@ -5,8 +5,8 @@
 <hr>
 
 - Git Backend: Fetches commit information from a Git repository
-    - [Jupyter notebook](./Perceval_Git_Backend.ipynb)
-    - [Script](./git_backend.py)
+  - [Jupyter notebook](./git_backend/perceval_git_backend.ipynb)
+  - [Script](./git_backend/perceval_git_backend.py)
 - GitHub Backend: Fetches issues, pull requests information from a GitHub repository
-    - [Jupyter notebook](./Perceval_GitHub_Backend.ipynb)
-    - [Script](./github_backend.py)
+  - [Jupyter notebook](./perceval_github_backend.ipynb)
+  - [Script](./git_backend/perceval_github_backend.py)

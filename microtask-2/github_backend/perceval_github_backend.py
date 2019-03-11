@@ -8,6 +8,7 @@ from perceval.backends.core.github import ( GitHub,
                                             CATEGORY_PULL_REQUEST)
 from datetime import datetime
 from pprint import pprint
+import json
 
 # Importing GitHub API Token 
 from config import API_TOKEN 
@@ -38,7 +39,11 @@ range_issues_list = list(range_issues)
 n_issues = len(range_issues_list)
 print("NUMBER OF ISSUES: ", n_issues)
 
-pprint(range_issues_list[n_issues-1])
+last_issue = range_issues_list[n_issues-1]
+print("Attributes of issue JSON document: ", last_issue.keys())
+
+with open("issue.json", "w") as write_file:
+    json.dump(last_issue, write_file)
 
 for issue in range_issues_list:
     print("-"*100)
@@ -78,7 +83,8 @@ range_pull_request_list = list(pull_requests)
 n_pulls = len(range_pull_request_list)
 print("NUMBER OF PULL REQUESTS: ", n_pulls)
 
-pprint(range_pull_request_list[n_pulls-1])
+with open("pull_request.json", "w") as write_file:
+    json.dump(range_pull_request_list[n_pulls-1], write_file)
 
 for pull_request in range_pull_request_list:
     print("-"*100)
