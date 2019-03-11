@@ -109,7 +109,7 @@ Now, we'll understand what each of them mean
 - `command`
 
 ```
-    $git clone --bare <repository_url> <local_dir_path>
+    $ git clone --bare <repository_url> <local_dir_path>
 ```
 
 #### `git log`:
@@ -122,7 +122,7 @@ Now, we'll understand what each of them mean
 - `command`
 
 ```
-    $git log --reverse --topo-order
+    $ git log --reverse --topo-order
 ```
 
 #### `git count-objects`:
@@ -132,7 +132,7 @@ Now, we'll understand what each of them mean
 - `command`
 
 ```
-    $git count-objects -v
+    $ git count-objects -v
 ```
 
 Note: `-v` flag is used for verbose output.

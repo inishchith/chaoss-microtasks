@@ -4,7 +4,8 @@ source: https://perceval.readthedocs.io/en/latest/_modules/perceval/backends/cor
 '''
 
 from perceval.backends.core.github import ( GitHub, 
-                                            CATEGORY_ISSUE, CATEGORY_PULL_REQUEST)
+                                            CATEGORY_ISSUE, 
+                                            CATEGORY_PULL_REQUEST)
 from datetime import datetime
 from pprint import pprint
 
@@ -41,24 +42,28 @@ pprint(range_issues_list[n_issues-1])
 
 for issue in range_issues_list:
     print("-"*100)
-    
+
     # Issue Title
     print("TITLE: ",issue["data"]["title"])
     # Issue Closed at 
     print("CLOSED AT: ", issue["data"]["closed_at"])
     # Number of comments that the issue received
     print("No of comments: ", issue["data"]["comments"])
-    
+
     # Issue creator details
     print("Issue Creator Username: ", issue["data"]["user"]["login"])
-    print("\tUser Association type with repository: {association}\n\tCreated at: {created}\n\tComment: {comment}\n".format(association=issue["data"]["author_association"], comment=issue["data"]["body"],created=issue["data"]["created_at"]))
-    
+    print("\tUser Association type with repository: {association}\n\tCreated at: {created}\n\tComment: {comment}\n".format(association=issue["data"]["author_association"], 
+                                                                                                                                            comment=issue["data"]["body"],
+                                                                                                                                            created=issue["data"]["created_at"]))
+
     # Issue comments details
     comments_data = issue["data"]["comments_data"]
     for comment in comments_data:
         print("Username: ", comment["user"]["login"])
-        print("\tUser Association type with repository: {association}\n\tCreated at: {created}\n\tComment: {comment}\n".format(association=comment["author_association"], comment=comment["body"],created=comment["created_at"]))
-    
+        print("\tUser Association type with repository: {association}\n\tCreated at: {created}\n\tComment: {comment}\n".format(association=comment["author_association"], 
+                                                                                                                               comment=comment["body"],
+                                                                                                                               created=comment["created_at"]))
+
     print("-"*100)
 
 # Analyzing Pull Request Information 
@@ -77,26 +82,29 @@ pprint(range_pull_request_list[n_pulls-1])
 
 for pull_request in range_pull_request_list:
     print("-"*100)
-    
+
     # Pull request Number and Title
     print("#{pull_request}: {title}".format(pull_request=pull_request["data"]["number"], title=pull_request["data"]["title"]))
     # Pull request state [ open / closed ]
     print("Pull Request State: ", pull_request["data"]["state"])
     # Merged True / False
     print("\nMerged: ", pull_request["data"]["merged"])
-    
+
     if pull_request["data"]["merged"]:
         print("Merged at: ", pull_request["data"]["merged_at"])
     else:
         print("Closed at: ", pull_request["data"]["closed_at"])
-    
+
     print("Number of comments: ", pull_request["data"]["comments"])
     print("\nAdditions: +{adds}\nDeletions: -{dels}".format(adds=pull_request["data"]["additions"], dels=pull_request["data"]["deletions"]))
-    print("\nNumber of Commits: {commits}\nNumber of files changed: {file_changes}".format(commits=pull_request["data"]["commits"], file_changes=pull_request["data"]["changed_files"]))
-    
+    print("\nNumber of Commits: {commits}\nNumber of files changed: {file_changes}".format(commits=pull_request["data"]["commits"], 
+                                                                                           file_changes=pull_request["data"]["changed_files"]))
+
     # Pull request creator details
     print("Username: ", pull_request["data"]["user"]["login"])
-    print("\tUser Association type with repository: {association}\n\tCreated at: {created}\n\tComment: {comment}\n".format(association=pull_request["data"]["author_association"], comment=pull_request["data"]["body"], created=pull_request["data"]["created_at"]))
-    
+    print("\tUser Association type with repository: {association}\n\tCreated at: {created}\n\tComment: {comment}\n".format(association=pull_request["data"]["author_association"],
+                                                                                                                            comment=pull_request["data"]["body"],
+                                                                                                                            created=pull_request["data"]["created_at"]))
+
     print("-"*100)
 
