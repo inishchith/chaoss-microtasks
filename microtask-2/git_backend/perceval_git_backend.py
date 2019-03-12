@@ -42,7 +42,7 @@ for commit in range_commits_list:
 
 
 for commit in range_commits_list[-5:]:
-    print("COMMIT MESSAGE: {commit_message}\n".format(
+    print("* COMMIT MESSAGE: {commit_message}\n".format(
         commit_message=commit["data"]["message"]))
     for change_file in commit['data']['files']:
         print("\tFILE NAME: {file_name}\n\tADDITIONS: +{additions}\n\tDELETIONS: -{deletions}\n".format(file_name=change_file['file'], 
