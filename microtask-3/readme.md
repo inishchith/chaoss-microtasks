@@ -27,7 +27,7 @@ Now, we'll understand what each of them mean
 
 #### `timestamp` :
 
-- The `timestamp` attribute is a [Unix Timestamp](https://en.wikipedia.org/wiki/Unix_time) conversion of the time when the `.fetch()` method is executed in UTC (Universal Time Coordinated) time scale using one of the Perceval backends.
+- The `timestamp` attribute is a [Unix Timestamp](https://en.wikipedia.org/wiki/Unix_time) conversion of the time when the `.fetch()` ( used to retreive data extracted from 30+ tools ) method is executed in UTC (Universal Time Coordinated) time scale using one of the Perceval backends.
 
 
 - References:
@@ -37,7 +37,7 @@ Now, we'll understand what each of them mean
 
 #### `updated_on` :
 
-- The `updated_on` attribute is a Unix Timestamp conversion of last update datetime in UTC (Universal Time Coordinated) time scale, set via retrieving the `update time` of the GitHub Item. ( More like last modified time )
+- The `updated_on` attribute is a Unix Timestamp conversion of last update datetime in UTC (Universal Time Coordinated) time scale, set via retrieving the `update time` of the Item. ( More like last activity )
 
 
 - References:
@@ -51,7 +51,8 @@ Now, we'll understand what each of them mean
 - The `origin` attribute is identifier of the origin url from where the data is to be fetched.
 
 - For example
-    - In case of Perceval's `GitHub` Backend, the origin is set to the GITHUB_URL + owner + repository . i.e in my case : `https://github.com/inishchith/MeetInTheMiddle`
+    - In case of Perceval's `GitHub` Backend, the origin is set to the GITHUB_URL + owner + repository . 
+    - i.e In most cases, I've used : `https://github.com/inishchith/MeetInTheMiddle`
 
 
 - References:
@@ -104,7 +105,8 @@ Now, we'll understand what each of them mean
     - A .git subfolder with all the git related revision history of your repo
     - A working tree, or checked out copies of your project files.
 - Perceval's `Git backend` uses an additional option `--bare` in order to make a bare copy of the repository.
-    - [`--bare`](https://git-scm.com/docs/git-clone#git-clone---bare) : In a bare repository, git version history is placed in root directory instead of .git directory with no source files. bare repositories are customarily given a .git extension
+    - [`--bare`](https://git-scm.com/docs/git-clone#git-clone---bare) : In a bare repository, git version history is placed in root directory instead of .git directory with no source files. 
+    - bare repositories are customarily given a .git extension
 
 - `command`
 
@@ -135,7 +137,7 @@ Now, we'll understand what each of them mean
     $ git count-objects -v
 ```
 
-Note: `-v` flag is used for verbose output.
+- gNote: `-v` flag is used for verbose output.
 
 <hr>
 <div align="center">
