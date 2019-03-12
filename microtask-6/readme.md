@@ -2,13 +2,16 @@
 
 - In this microtask, we'll create a Python script to execute Graal via its Python interface using the CoCom and CoLic backends.
 
+- CoCom Backend [ [Jupyter Notebook](./cocom_backend/graal_cocom_backend.ipynb) | [Script](./cocom_backend/graal_cocom_backend.py) ] 
+- CoLic Backend [ [Jupyter Notebook](./colic_backend/graal_colic_backend.ipynb) | [Script](./colic_backend/graal_colic_backend.py) ] 
+
 <hr>
 
 #### CoCom Backend
 
-- CoCom ( Code Complexity ) Backend based on supported languages with the help of [Lizard](https://github.com/terryyin/lizard) helps us with various source code analysis such as:
+- CoCom ( Code Complexity ) Backend based on supported languages with the help of [Lizard](https://github.com/terryyin/lizard), provides us with various source code analysis such as:
+  - Cyclomatic Complexity and Average Cyclomatic Complexity
   - Lines of Code and Average Lines of Code
-  - Code Complexity and Average Code Complexity
   - Number of functions
     ... and many more
 
