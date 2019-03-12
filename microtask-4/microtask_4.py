@@ -4,7 +4,7 @@
 import requests
 from pprint import pprint
 
-# base requet url
+# base request url
 base_url = "https://archive.softwareheritage.org"
 
 # setting urls for origin and visits endpoints
@@ -27,7 +27,7 @@ if request.status_code == 200:
     json_data = request.json()
     origin_id = json_data["id"]
 
-    # making a GET requets to the visits endpoint using the origin_id of the
+    # making a GET request to the visits endpoint using the origin_id of the
     # found archive
     visits_endpoint_url = base_url + \
         visits_endpoint.format(origin_id=origin_id)
