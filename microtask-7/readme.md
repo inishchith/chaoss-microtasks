@@ -12,6 +12,7 @@
 - Commits are returned in the same order they were obtained.
 
 **NOTE:** All the below methods which are common across `Graal` backends requires a `Perceval`'s commit object from it's `Git` backend.
+<br>
 
 #### `_filter_commit()`:
 
