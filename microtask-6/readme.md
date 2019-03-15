@@ -34,25 +34,25 @@
 
 ```sh
     # clone the repository
-    git clone https://github.com/fossology/fossology
+    $ git clone https://github.com/fossology/fossology
 
     # setup NOMOS
-    cd fossology/src/nomos/agent/
-    make -f Makefile.sa
+    $ cd fossology/src/nomos/agent/
+    $ make -f Makefile.sa
 ```
 
 **SCANCODE**
 
 ```sh
     # download the scancode distribution v3.0.0
-    wget https://github.com/nexB/scancode-toolkit/releases/download/v3.0.0/scancode-toolkit-3.0.0.zip
+    $ wget https://github.com/nexB/scancode-toolkit/releases/download/v3.0.0/scancode-toolkit-3.0.0.zip
 
     # unzip the distribution and change directory
-    unzip -q scancode-toolkit-3.0.0.zip
-    cd scancode-toolkit-3.0.0
+    $ unzip -q scancode-toolkit-3.0.0.zip
+    $ cd scancode-toolkit-3.0.0
 
     # setup scancode for the first execution
-    ./scancode --help
+    $ ./scancode --help
 ```
 
 **Note:** In order to reproduce the results please change the executable path in the source files.
