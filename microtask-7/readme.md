@@ -20,11 +20,12 @@
 
 #### `_analyze()`:
 
-- This method analyzes a commit and the corresponding checkout version of the repository with the help of either NOMOS or SCANCODE tool.
+- This method analyzes a commit and the corresponding checkout version of the repository.
+- For example: In case of `CoLic` Backend analysis can be performed on license information with the help of either NOMOS or SCANCODE tool.
 
 #### `_post()`:
 
-- This method performs operation (e.g. removing some attributes from the commit generator) on the Graal item obtained
+- This method performs operation (e.g. removing some attributes from the commit generator) on the Graal item obtained.
 
 <hr>
 
@@ -37,20 +38,20 @@
 
 ```
     # To attach a worktree
-    git worktree add <worktree_path> <branch_name>
+    $ git worktree add <worktree_path> <branch_name>
 
     # When you are done with a linked working tree you can simply prune it.
-    rm -rf git worktree prune
+    $ git worktree prune
 ```
 
 #### `git checkout`:
 
-- This command helps us navigate through the git commit / branch history in order to undo changes related to the current working tree.
+- This command helps us navigate through the git commit / branch history in order to make / undo changes related to the current working tree.
 - `command`:
 
 ```
-    # to checkout a commit
-    git checkout <commit_hash>
+    # to checkout a commit / branch
+    $ git checkout <commit_hash / branch_name>
 ```
 
 <hr>
