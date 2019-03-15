@@ -137,7 +137,7 @@ Now, we'll understand what each of them mean
     $ git count-objects -v
 ```
 
-- gNote: `-v` flag is used for verbose output.
+- Note: `-v` flag is used for verbose output.
 
 <hr>
 <div align="center">
