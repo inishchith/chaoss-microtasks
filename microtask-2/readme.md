@@ -8,5 +8,5 @@
   - [Jupyter notebook](./git_backend/perceval_git_backend.ipynb)
   - [Script](./git_backend/perceval_git_backend.py)
 - GitHub Backend: Fetches issues, pull requests information from a GitHub repository
-  - [Jupyter notebook](./perceval_github_backend.ipynb)
-  - [Script](./git_backend/perceval_github_backend.py)
+  - [Jupyter notebook](./github_backend/perceval_github_backend.ipynb)
+  - [Script](./github_backend/perceval_github_backend.py)
