@@ -16,10 +16,18 @@ In this microtask, we'll try to set up Graal to be executed from PyCharm IDE.
 2. Add Graal parameters in `Parameters` input tab.
 3. Apply the changes & Run the script
 
-**Note:** Below: I'm setting up Graal's `CoCom` backend for execution.
+<div align="center">
+    <b> Below: I'm setting up Graal's `CoCom` backend for execution.</b>
+    <br><br>
+    <img src="./images/graal_setup.gif">
+</div>
+
+<br>
 
 <div align="center">
-    <img src="./images/graal_setup.gif">
+    <b>  Below: I'm setting up grimoirelab-perceval & grimoirelab-toolkit, with this we can have a look at the dependent source and debug faster. </b>
+    <br><br>
+    <img src="./images/add_toolkit_to_path_graal.gif">
 </div>
 
 <br>

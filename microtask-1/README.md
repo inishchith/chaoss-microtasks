@@ -16,10 +16,18 @@ In this microtask, we'll try to set up Perceval to be executed from PyCharm IDE.
 2. Add Perceval parameters in `Parameters` input tab.
 3. Apply the changes & Run the script
 
-**Note:** Below: I'm setting up Perceval's `Git` backend for execution.
+<div align="center">
+    <b> Below: I'm setting up Perceval's `Git` backend for execution. </b>
+    <br><br>
+    <img src="./images/perceval_setup.gif">
+</div>
+
+<br>
 
 <div align="center">
-    <img src="./images/perceval_setup.gif">
+    <b> Below: I'm setting up grimoirelab-toolkit, with this we can have a look at the dependent source and debug faster.</b>
+    <br><br>
+    <img src="./images/add_toolkit_to_path_perceval.gif">
 </div>
 
 <br>
