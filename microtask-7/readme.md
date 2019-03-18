@@ -33,7 +33,8 @@
 
 #### `git worktree`:
 
-- This command helps us manage multiple working trees attached to the same repository allowing us to check out more than one branch at a time.
+- This command helps us create a working tree of the cloned repository with the active branch set to `master` by default.
+- With this we're able to perform `checkout` operations on the repository which cannot be performed on a cloned `bare` repository.
 - `command`:
 
 ```
@@ -46,13 +47,16 @@
 
 #### `git checkout`:
 
-- This command helps us navigate through the git commit / branch history in order to make / undo changes related to the current working tree.
+- This command helps us checkout all the content of the repository for a given commit hash.
+- With this the content at every commit can be individually analyzed.
 - `command`:
 
 ```
-    # to checkout a commit / branch
-    $ git checkout <commit_hash / branch_name>
+    # to checkout a commit
+    $ git checkout <commit_hash>
 ```
+
+- [Reference](https://github.com/chaoss/grimoirelab-graal/blob/541ce6739f9352f58223b01de1c8a5d9f206957f/graal/graal.py#L316)
 
 <hr>
 <div align="center">
