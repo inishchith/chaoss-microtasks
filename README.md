@@ -1,5 +1,7 @@
 # chaoss-microtasks
 
+### Microtasks for GSOC Idea #3 : Support of Source Code Related Metrics [READ MORE](https://github.com/chaoss/grimoirelab/issues/182)
+
 ### # Microtask 1: 
 
 - **Task:** Set up Perceval to be executed from PyCharm.

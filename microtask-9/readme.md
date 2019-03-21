@@ -13,6 +13,7 @@
 | [#4: grimoirelab-graal](https://github.com/chaoss/grimoirelab-graal/pull/4) | [#3](https://github.com/chaoss/grimoirelab-graal/issues/3) | Fix failing tests      |    Merged |
 | [#7: grimoirelab-graal](https://github.com/chaoss/grimoirelab-graal/pull/7) | [#6](https://github.com/chaoss/grimoirelab-graal/issues/6) | Update copyright dates under license | Merged |
 | [#9: grimoirelab-graal](https://github.com/chaoss/grimoirelab-graal/pull/9) | [#8](https://github.com/chaoss/grimoirelab-graal/issues/8) |  Add support for Lua & Golang via Lizard version bump | Merged |
+| [#15: grimoirelab-graal](https://github.com/chaoss/grimoirelab-graal/pull/15) | - | Add flake8 analyzer to CoQua backend | Merged & Closed |
 
 ### # [ Optional ]
 - I've previously worked with SCANCODE, one of the tools which Graal `CoLic` backend uses in order to extract license information.
