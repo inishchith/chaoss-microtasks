@@ -28,7 +28,7 @@ Now, we'll understand what each of them mean
 
 #### `timestamp` :
 
-- The `timestamp` attribute is a [Unix Timestamp](https://en.wikipedia.org/wiki/Unix_time) conversion of the time when the `.fetch()` ( used to retreive data extracted from 30+ tools ) method is executed in UTC (Universal Time Coordinated) time scale using one of the Perceval backends.
+- The `timestamp` attribute is a [Unix Timestamp](https://en.wikipedia.org/wiki/Unix_time) conversion of the time when the `.fetch()` ( used to retrieve data extracted from 30+ tools ) method is executed in UTC (Universal Time Coordinated) time scale using one of the Perceval backends.
 
 * References:
 
@@ -69,7 +69,7 @@ Now, we'll understand what each of them mean
 
 #### `uuid` :
 
-- `uuid` ( uniqure identifier ) attribute is the SHA-1 Hash of the string. A string is our case is formed via concatination of the values from a list using `:` ( colon symbol ).
+- `uuid` ( unique identifier ) attribute is the SHA-1 Hash of the string. A string is our case is formed via concatenation of the values from a list using `:` ( colon symbol ).
 
 - for example
 
@@ -79,7 +79,7 @@ Now, we'll understand what each of them mean
 - References:
 
   1. [setting value of uuid](https://github.com/chaoss/grimoirelab-perceval/blob/805d73122b871c29146a70601d8f3d78267b41e1/perceval/backend.py#L162)
-  2. [concatination of list and sha-1](https://github.com/chaoss/grimoirelab-perceval/blob/805d73122b871c29146a70601d8f3d78267b41e1/perceval/backend.py#L427)
+  2. [concatenation of list and sha-1](https://github.com/chaoss/grimoirelab-perceval/blob/805d73122b871c29146a70601d8f3d78267b41e1/perceval/backend.py#L427)
 
 <hr>
 
@@ -108,12 +108,12 @@ Now, we'll understand what each of them mean
 #### `metadata()`:
 
 - This method is used to add metadata about when the information was retrieved, category and id.
-- The method is executed on every `fetch()` method call inorder to have a log of when the item was last updated.
+- The method is executed on every `fetch()` method call in order to have a log of when the item was last updated.
 - The method leverages on three other methods which are specific for the backends :
   - `metadata_id()` : extracts identifier from an item
   - `metadata_updated_on()` : extracts the last updated datetime of the item and converts it into a UNIX timestamp format.
   - `metadata_category()` : extracts the category of the item.
-- **Note:** for some of the backends this method is overriden
+- **Note:** for some of the backends this method is overridden
 
 #### `has_resuming()`:
 
