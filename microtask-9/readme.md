@@ -14,6 +14,10 @@
 | 4 | [#7: grimoirelab-graal](https://github.com/chaoss/grimoirelab-graal/pull/7) | [#6](https://github.com/chaoss/grimoirelab-graal/issues/6) | Update copyright dates under license | Merged |
 | 5 | [#9: grimoirelab-graal](https://github.com/chaoss/grimoirelab-graal/pull/9) | [#8](https://github.com/chaoss/grimoirelab-graal/issues/8) |  Add support for Lua & Golang via Lizard version bump | Merged |
 | 6 | [#15: grimoirelab-graal](https://github.com/chaoss/grimoirelab-graal/pull/15) | - | Add flake8 analyzer to CoQua backend | Merged & Closed |
+| 7 | [# 349: grimoirelab-sigils](https://github.com/chaoss/grimoirelab-sigils/pull/349) | - | [docs] Fix broken links in docs | Merged |
+| 8 | [# 76: grimoirelab-tutorial](https://github.com/chaoss/grimoirelab-tutorial/pull/76) | [#75](https://github.com/chaoss/grimoirelab-tutorial/issues/75) | [graal] Add Graal to GrimoireLab Tutorial  | Merged |
+
+<br>
 
 <hr>
 
@@ -48,9 +52,15 @@
     - Updated CoQua backend tests
     - Added tests for Flake8 analyzer
 
+**7. Fix broken links in docs under [# 349: grimoirelab-sigils](https://github.com/chaoss/grimoirelab-sigils/pull/349)**
+
+**8. Add Graal to GrimoireLab Tutorial**
+
+  - Tutorials for set of tools provided by GrimoireLab doesn't contain tutorial for usage of Graal. My task was to add tutorial on Graal usage to [this](https://github.com/chaoss/grimoirelab-tutorial) repository.
+
 <hr>
 
-### # [ Optional ]
+### # [ Related ]
 - I've previously worked with SCANCODE, one of the tools which Graal `CoLic` backend uses in order to extract license information.
 
 #### # ScanCode Pull Requests
