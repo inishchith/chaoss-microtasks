@@ -28,7 +28,10 @@ Now, we'll understand what each of them mean
 
 #### `timestamp` :
 
-- The `timestamp` attribute is a [Unix Timestamp](https://en.wikipedia.org/wiki/Unix_time) conversion of the time when the `.fetch()` ( used to retrieve data extracted from 30+ tools ) method is executed in UTC (Universal Time Coordinated) time scale using one of the Perceval backends.
+- The `timestamp` attribute is used to know the datetime when the item was fetched from the data source.
+- The corresponding items are fetched using one of the common method of Perceval Backend i.e `.fetch()` method ( used to retrieve data extracted from 30+ tools ).
+
+**Note:** The attribute is represented in [Unix Timestamp](https://en.wikipedia.org/wiki/Unix_time) conversion.
 
 * References:
 
@@ -36,7 +39,10 @@ Now, we'll understand what each of them mean
 
 #### `updated_on` :
 
-- The `updated_on` attribute is a Unix Timestamp conversion of last update datetime in UTC (Universal Time Coordinated) time scale, set via retrieving the `update time` of the Item. ( More like last activity )
+- The `updated_on` attribute is used to know the datetime when the item was last updated in the data source.
+- It is set via retrieving the `update time` of the Item. ( More like last activity )
+
+**Note:** The attribute is represented in [Unix Timestamp](https://en.wikipedia.org/wiki/Unix_time) conversion.
 
 * References:
 
@@ -45,11 +51,11 @@ Now, we'll understand what each of them mean
 
 #### `origin` :
 
-- The `origin` attribute is identifier of the origin url from where the data is to be fetched.
+- The `origin` attribute is identifier of the data source i.e origin url, from where the data is to be fetched.
 
 - For example
   - In case of Perceval's `GitHub` Backend, the origin is set to the GITHUB_URL + owner + repository .
-  - i.e In most cases, I've used : `https://github.com/inishchith/MeetInTheMiddle`
+  - i.e In most cases, I've used : `https://github.com/inishchith/MeetInTheMiddle` as the source of data.
 
 * References:
 
@@ -57,7 +63,7 @@ Now, we'll understand what each of them mean
 
 #### `category` :
 
-- The `category` attribute is the category of item to be fetched from the origin ( the data source )
+- The `category` attribute is the category of item to be fetched from the origin ( the data source ).
 
 * for example
   - In case of `Git` Backend, the category of item that is available to be fetched is [commit]()
@@ -69,7 +75,8 @@ Now, we'll understand what each of them mean
 
 #### `uuid` :
 
-- `uuid` ( unique identifier ) attribute is the SHA-1 Hash of the string. A string is our case is formed via concatenation of the values from a list using `:` ( colon symbol ).
+- `uuid` attribute is a unique identifier of every item extracted with the help of Perceval.
+- The attribute is represented in the form of SHA-1 Hash of the string. A string is our case is formed via concatenation of the values from a list using `:` ( colon symbol ).
 
 - for example
 
