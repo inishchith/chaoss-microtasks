@@ -11,3 +11,7 @@
 - I've used sindresorhous's [refined-github](https://github.com/sindresorhus/refined-github), which is available on SoftwareHeritage [here](https://archive.softwareheritage.org/browse/origin/https://github.com/sindresorhus/refined-github/directory/) for this microtask.
 
 - [Jupyter notebook](./microtask_4.ipynb) | [Script](./microtask_4.py)
+
+#### [ OPTIONAL ]
+
+- We can also extract license information related to the Software repository using appropriate endpoints. Find the implementation script and notebook in the current directory :)
